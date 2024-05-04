@@ -99,7 +99,7 @@
                     <li>v0.1 - 5/2/2024 -initial version mainly with Radio controlled car content that will be updated to iRacing content</li>
                     <li>v0.11 - 5/2/2024 -weight transfer content updated</li>
                     <li>v0.12 - 5/3/2024 -camber section updated</li>
-                    <li>v0.13 - 5/3/2024 - updated caster section and handling scenarios section</li>
+                    <li>v0.13 - 5/3/2024 - updated caster, toe handling scenarios section</li>
                   </ul>
                 </div>
               </div>
@@ -853,7 +853,7 @@
             performance as the tire will have a larger contact patch under braking.
           </p>
 
-
+          <h2 class="text-primary-emphasis">Handling Scenarios</h2>
           <p>
             In each of the following scenarios, here are things you will help you improve the handling by making changes to
             camber.  You don't need to do all of the suggested changes listed below in these scenarios.  It is best to 
@@ -863,7 +863,7 @@
           <div class="container">
             <div class="row">
               <div class="col">
-                <h2 class="text-primary-emphasis">Loose off Power</h2>
+                <h3>Loose off Power</h3>
                 <ul>
                   <li>
                     Reduce negative camber at the front.  This will have the bigger impact in an off power situation
@@ -880,7 +880,7 @@
               </div>
 
               <div class="col">
-                <h2 class="text-primary-emphasis">Loose on Power</h2>
+                <h3>Loose on Power</h3>
                 <ul>
                   <li>
                     Increase rear negative camber.  This will have a bigger impact in an on power situation because you
@@ -896,7 +896,7 @@
             </div>
             <div class="row">
               <div class="col">
-                <h2 class="text-primary-emphasis">Push off Power</h2>
+                <h3>Push off Power</h3>
                 <ul>
                   <li>
                     Increase front negative camber.  This will have a bigger impact in an off power situation because you
@@ -916,7 +916,7 @@
               </div>
 
               <div class="col">
-                <h2 class="text-primary-emphasis">Push on Power</h2>
+                <h3>Push on Power</h3>
                 <ul>
                   <li>
                     Reduce rear negative camber. This will have a bigger impact in an on power situation because you
@@ -1000,32 +1000,40 @@
             indicated in the Camber section, most setups will run less front camber than the rear, 
             because the caster adds negative camber as you turn the car.
           </p>
+
+          <h2 class="text-primary-emphasis">Handling Scenarios</h2>
+          <p>
+            In each of the following scenarios, here are things you will help you improve the handling by making changes to
+            caster.  You don't need to do all of the suggested changes listed below in these scenarios.  It is best to 
+            start at the top of the list and do one at a time.
+          </p>
           
           <div class="container">
             <div class="row">
               <div class="col">
-                <h2 class="text-primary-emphasis">Loose Off Power</h2>
-                <p>reduce caster</p>
-        
+                <h3>Loose Off Power</h3>
+                <ul>
+                  <li>reduce caster</li>
+                </ul>
             
               </div>
               <div class="col">
-                <h2 class="text-primary-emphasis">Loose On Power</h2>
-                <p>reduce caster</p>
+                <h3">Loose On Power</h3>
+                <ul><li>reduce caster</li></ul>
            
               </div>
       
             </div>
             <div class="row">
               <div class="col">
-                <h2 class="text-primary-emphasis">Push Off Power</h2>
-                <p>Increase Caster</p>
+                <h3>Push Off Power</h3>
+                <ul><li></li>Increase Caster</li></ul>
     
             
               </div>
               <div class="col">
-                <h2 class="text-primary-emphasis">Push On Power</h2>
-                <p>increase caster</p>
+                <h3>Push On Power</h3>
+                <ul><li></li>increase caster</li></ul>
             
               </div>
       
@@ -1039,11 +1047,11 @@
         <div id="toe" class="container">
           <h1 style="color:rgb(0 0 0 / 0.0)">Behind Header</h1>
            
-          <h1 class="text-warning">Static Toe</h1>
+          <h1 class="text-warning">Toe</h1>
           <p>
               The static toe of a car applies to both the front and rear suspension.  As shown in the diagram
               below, the front tires have static toe-out and the rear tires have static toe-in when the 
-              distance "A" is longer than the distance <em style="color:red">"B"</em>. The amount
+              distance <em style="color:lightblue">"A"</em> is longer than the distance <em style="color:red">"B"</em>. The amount
               of static toe-out at the front and the amount of static stoe-in at the rear have a dramatic affect on 
               the balance of the car during cornering.
           </p>
@@ -1051,35 +1059,40 @@
           <center>
               <img  class='square' src="./img/toeExplaned.png" />
           </center>
+
+          <h2 class="text-primary-emphasis">Slip Angle</h2>
+
+          <p>
+            Before we can explain how toe affects handling we need to understand the concept of slip angle and how 
+            that affects tire grip.
+            Slip angle is the angle between the direction in which a wheel is pointing 
+            and the direction in which it is actually traveling. 
+          </p>
+          <p>
+            They key point here is that tires will generate their maximum grip when they have some amount of slip angle.
+            Different tires have different optimal slip angles to generate maximum grip, so experimenting with slip
+            angle can help fine tune the grip you can achieve.
+          </p>
           
-          <h1>Front Static Toe Impact on Handling</h1>
+          <h2 class="text-primary-emphasis">Front Static Toe Impact on Handling</h2>
           
           <p>
-              Since toe affects slip angle and different tires like different amounts of slip angle to 
-              achieve maximum grip, different static toe will be required for different tires.  This
-              means that for some tires you will want more toe-out than other tires to achieve maximum
-              lateral grip.
-          </p> 
+            Since we cannot change something called ackerman in iRacing which would allow you to affect
+            the front toe dynamically as you turn the wheel more, we are limited to just talking about using
+            static toe.
+          </p>
           <p>
               As a general rule of thumb the more front tire <em>toe-out</em> you run the more turn-in steering 
-              you will have and the less steering you will have mid corner to corner exit.  
-          </p>
-          <p>	
+              you will have and the less steering you will have mid corner to corner exit. 
               It then follows that less front tire </em>toe-out</em> you run the less 
               turn-in steering you will have and the more mid corner and corner exit steering 
               you will have. 
+              Please keep in mind that since there is an optimal range if you go too far with your adjustments you will
+              get the opposite results.
           </p>
-          <p>
-              As indicated above these are general rules of thumb, as the opposite can actually be true
-              depending on how much static toe you are already running and the optimal slip angle for the
-              tire you are running. For example lets say you are running 3 degrees front toe-out and you
-              have too much steering in the middle of the corner.  Contrary to the rules of thumb above,
-              if the tire you run generates its maximum grip at a small slip angle of 2 degrees,
-              then reducing the front toe-out will actually increase the amount of steering.  So don't be
-              lazy....experiment :)
-          </p>
+  
               
-          <h1>Rear Static Toe Impact on Handling</h1>
+          <h2 class="text-primary-emphasis">Rear Static Toe Impact on Handling</h2>
           <p>
               The <em>more rear tire toe-in you run the less steering your car will have</em>.
               Running static toe-in on the rear of the car the rear outside tire has a greater
@@ -1098,93 +1111,56 @@
               the car balance you are looking for.
           </p>
           
-          <h1>Not about weight transfer in this case</h1>
+          <h2 class="text-primary-emphasis">Handling Scenarios</h2>
           <p>
-              The toe settings do not cause weight transfer to affect handling.  It is one of a couple 
-              of exceptions (like Ackerman), that affects handling based on the direction of the 
-              tire and something called slip angle.
-          </p>
-          
-          
+            In each of the following scenarios, here are things you will help you improve the handling by making changes to
+            the front and/or rear static toe.  You don't need to do all of the suggested changes listed below in these scenarios.  It is best to 
+            start at the top of the list and do one at a time.
+          </p>          
       
               <div class="container ">
                 <div class="row">
                   <div class="col">
-                    <h2 class="text-primary-emphasis" class="text-primary-emphasis">Loose Off power</h2>
-                    <p>
-                        Start by increasing the rear toe-in using very small increments (see rule of thumb below). 
-                        Be careful not to add too much rear toe-in, as this can cause the car to 
-                        loose rear grip later in the race.
-                    </p>
-                    <p>
-                        The front toe is a little more complicated depending on where you are loose off power within the
-                        corner.  For example if you start to get get loose as soon as your turn into a corner
-                        and the car feels very edgy, then you will want to to decrease the front toe-out. However if you don't
-                        start to get loose until after the turn-in and up to the middle of the corner then increasing the 
-                        front toe-out you will take away some steering mid corner (and also corner exit).
-                        
+                    <h3>Loose Off power</h3>
+                    <ul>
+                      <li>Decrease the front toe-out for less steering at initial turn-in.</li>
+                      <li>Increase the front toe-out for less steering after initial turn-in</li>
+                      <li>Increase rear toe-in</li>
+                    </ul>
                   </div>
                   <div class="col">
-                    <h2 class="text-primary-emphasis" class="text-primary-emphasis">Loose On Power</h2>
-                    <p>
-                        Increase the front toe-out or increase the rear toe-in to reduce the corner exit steering. 
-                    
-                    </p>
-      
+                    <h3>Loose On Power</h3>
+                    <ul>
+                      <li>Increase the rear toe-in</li>
+                      <li>Increase the front toe-out </li>
+                    </ul>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col">
-                    <h2 class="text-primary-emphasis" class="text-primary-emphasis">Push Off Power</h2>
-                    <p>
-                        Increase the front toe-out for quicker initial turn-in.
-                        After initial turn in, decreasing front toe-out will give
-                        you more steering. 	
-                    </p>
-                    <p>
-                        Running less rear toe-out will give you more steering.
-                    </p>
+                    <h3>Push Off Power</h3>
+
+                    <ul>
+                      <li>Increase the front toe-out for more steering at initial turn-in.</li>
+                      <li>Decrease the front toe-out for more steering after initial turn-in</li>
+                      <li>Decrease rear toe-in</li>
+                    </ul>
                 
                   </div>
                   <div class="col">
-                    <h2 class="text-primary-emphasis" class="text-primary-emphasis">Push On Power</h2>
-                    <p>
-                        Reduce the front toe-out of the car and/or decrease the rear toe-in of the car.  Start with the rear 
-                        toe and then adjust the front toe given this is an on power situation and the rear tires have more 
-                        load and thus can affect the handling more.
-                    </p>
+                    <h3>Push On Power</h3>
+                    <ul>
+                      <li>Decrease the rear toe-in</li>
+                      <li>Decrease the front toe-out </li>
+                    </ul>
                 
                   </div>
                 </div>
               </div>
       
-          <h2 class="text-primary-emphasis" class="text-primary-emphasis">Rule of Thumb </h2>
-          <p><em>Rear Toe-in</em>  For touring cars rear toe between 2.0 and 3.5 is a good range, with 3.0
-              being an excellent starting point.  If you find the car turns in nicely and is very stable, but starts
-              to push mid corner this is a good time to reduce the rear toe-in slightly, perhaps 0.5 degrees, as long
-              as the car remains stable. This will free up the car mid corner and give you more mid corner and corner
-              exit speed.
-          <p>
-              Also, in general the higher the speed of the corner the less toe you will want.  This is because 
-              in order to achieve maximum grip at higher speeds you will need less slip angle on the tires. 
-          </p>
-          <p>
-              <em>Front Toe-out: </em> Since front tire toe-out makes the car feel edge 
-              on turn-in but makes the car push mid corner,
-              and to me neither of these are desirable, I like to run no front to-out.  
-              This provides a smooth turn-in and good mid corner steering
-          </p>
           
         </div>
       
-        <!------------------------------------------------------------------------------------------------------------------------------------
-        <div id="Tires" class="container">
-          <h1 style="color:rgb(0 0 0 / 0.0)">Behind Header</h1>
-           
-          <h1  class="text-primary-emphasis">Tires</h1>
-        </div>
-      
-        ---------------------------------------------------------------------------------------------------------------------------------->
         <div id="springs" class="container">
           <h1 style="color:rgb(0 0 0 / 0.0)">Behind Header</h1>
            
